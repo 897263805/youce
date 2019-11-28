@@ -1,0 +1,9 @@
+#caseMan {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+#caseMan .btn {
+  float: right;
+  margin-right: 20px;
+}

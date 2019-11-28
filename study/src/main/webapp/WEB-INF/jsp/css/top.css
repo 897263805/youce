@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+	#logo{
+		display:flex;
+		width:100%;
+		height:70px;
+	    background-color:#38bcfc;
+	}
+	.logo_images{
+		margin:5px 0 0 10px;
+	}
+	.logo_font{
+		position:fixed;
+		left:50%;
+		transform:translate(-50%,0);
+		text-align:center;
+		line-height:70px;
+		color:#f7f801;
+		text-shadow:3px 3px 7px #111;
+		font-size:35px;
+	}
+	.logo_time{
+		position:fixed;
+		right:5px;
+		line-height:70px;
+	}
+	#top{
+		display:flex;
+		height:30px;
+		background-color:#1e9eea; 
+		line-height:30px;
+	}
+	
+	a img{
+		margin:0 5px;
+		vertical-align:middle;
+	}
+	.bar{
+		height:30px;
+		line-height: 30px;
+		text-decoration: none;
+		color:#fff;
+	}
+	a:hover{
+		color:#ccc;
+		text-decoration:underline;
+	}
+	.back{
+		margin-right:10px;
+	}
+	.forward{
+		margin-right:50px;
+		vertical-align:middle;
+	}
+	.nav{
+		position:fixed;
+		right:5px;
+	}
+	.home, .exit, .refresh{
+		margin-right:10px;
+	}

@@ -1,0 +1,44 @@
+
+<html>
+  <head>
+    <title>教师界面顶部</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/top.css">
+	
+  </head>
+  
+  <body>
+    <div id="logo">
+		<div class="logo_images"><img src="./images/logo.png"/></div>			
+		<div class="logo_font">超斌在线考试平台</div>
+		<div class="logo_time" id="clock"></div>
+	</div>
+	<div id="top">	
+		<span>
+			<a class="bar back" href="javascript:history.back();">
+				<img src="./images/back.png"/>返回
+			</a>
+		</span>
+		<span>
+			<a class="bar forward" href="javascript:history.forward();">
+				<img src="./images/forward.png"/>前进
+			</a>
+		</span>
+		<span class="bar back">admin admin</span>
+		<span class="nav">
+			<a class="bar home" href="main.jsp" target="main">
+				<img src="./images/home.png"/>主页
+			</a>
+			<a class="bar refresh" href="javascript:top.history.go(0);">
+				<img src="./images/refresh.png"/>刷新
+			</a>			
+			<a class="bar exit" href="javascript:if(confirm('您确定要退出系统吗?'))top.location='./login.html'">
+				<img src="./images/exit.png"/>退出系统
+			</a>
+		</span>
+	</div>
+	
+	<script src="./js/script.js"></script>
+	<script src="./js/top.js"></script>
+  </body>
+</html>

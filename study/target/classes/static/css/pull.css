@@ -1,0 +1,22 @@
+#leftframe{
+	position:fixed;
+	width:15px;
+	height:100%;
+	right:0;
+	background-color:#31b9fb;
+}
+#imgcon{
+	width:13px;
+	height:100px;
+	position:absolute;
+	top:0;bottom:0;
+	left:0;right:0;
+	margin:auto;
+	transform:translate(0,-50%);
+	background-color:#eee;
+}
+#jiantou{
+	position:absolute;
+	top:0;bottom:0;
+	margin:auto;
+}

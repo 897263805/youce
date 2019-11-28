@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/com/yonyou/RunUI/RunUI.java=UTF-8
+encoding//src/main/java/com/yonyou/controller=UTF-8
+encoding//src/main/java/com/yonyou/controller/FileController.java=UTF-8
+encoding//src/main/java/com/yonyou/mapping=UTF-8
+encoding//src/main/java/com/yonyou/pojo=UTF-8
+encoding//src/main/java/com/yonyou/pojo/ExcelRows.java=UTF-8
+encoding//src/main/java/com/yonyou/service/FileSeriver.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/application.properties=UTF-8
+encoding//src/main/resources/templates=UTF-8
+encoding//src/main/resources/templates/center.html=UTF-8
+encoding//src/main/resources/templates/login.html=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/js=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8

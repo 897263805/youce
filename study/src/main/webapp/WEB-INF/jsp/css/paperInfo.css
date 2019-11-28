@@ -1,0 +1,29 @@
+.paperInfoTop{
+	height:40px;
+	margin-left:50px;
+	line-height:40px;
+}
+table{
+	position:static;
+}
+.tableOne{
+	margin-left:10px;
+}
+#pageTip{
+	position:fixed;
+	bottom:50px;
+	left:50%;
+	transform:translate(-50%,0);
+	text-align:center;
+	
+}
+.paperPage>td{	
+	display:block;
+}
+.pageOne td{
+	border:0;
+	display:table-cell;
+}
+.paperPage>td,.paperPage{
+	border:0;
+}

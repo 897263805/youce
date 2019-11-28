@@ -1,0 +1,50 @@
+#searchBar{
+	height:40px;
+	width:100%;
+	line-height:40px;
+}
+#searchBar #add{
+	float:left;
+	margin:8px 0 0 10px;
+	width:80px;
+	height:25px;
+	background-color:#a6f2fc;
+	text-align:center;
+	line-height:25px;
+	border-radius:5px;
+	box-shadow:2px 2px 0 0 #ccc;
+}
+#add a{
+	display:block;
+}
+#searchBar #search{
+	float:right;
+	height:40px;
+	margin-right:50px;
+}
+td{
+	border-bottom:1px solid rgba(204, 204, 204, .5);	
+	font-size:15px;
+	font-family:FangSong;
+	font-weight:bold;
+	color:#333;
+}
+th{
+	height:30px;
+	background-color:rgba(204, 204, 204, .5);
+	border-right:1px solid #ccc;
+	text-align:left;		
+}
+td{
+	height:25px;
+}
+.font{
+	margin-left:10px;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+a:hover{
+	color:red;
+}

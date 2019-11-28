@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文件选择</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/selectFile.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+  <div id="selectFile">
+    <!-- 文件选择按钮 -->
+    <div class="btn-box">
+      <el-button class="btn" @click="openDialog">选择用例</el-button>
+    </div>
+    <!-- 点击文件选择后的弹出框 -->
+    <el-dialog
+      title="文件选择"
+      :visible.sync="showDialog"
+      width="60%">
+      <el-transfer
+        :data="uploadData"
+        v-model="selectData"
+        filterable
+        :titles="['已上传', '已选择']"
+        :format="{
+          noChecked: '${total}',
+          hasChecked: '${checked}/${total}'
+        }"
+        :props="{
+          key: 'fileName',
+          label: 'fileName'
+        }"
+        >
+      </el-transfer>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="showDialog = false">取 消</el-button>
+        <el-button type="primary" @click="uploadConfirm">确 定</el-button>
+      </span>
+    </el-dialog>
+  </div>
+
+  <script src="./js/selectFile.js"></script>
+</body>
+</html>

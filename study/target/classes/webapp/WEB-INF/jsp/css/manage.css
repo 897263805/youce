@@ -1,0 +1,89 @@
+#searchBar{
+	height:40px;
+	width:100%;
+	line-height:40px;
+}
+#searchBar #add, #searchBar #outPaper{
+	float:left;
+	margin:8px 0 0 10px;
+	width:80px;
+	height:25px;
+	background-color:#a6f2fc;
+	text-align:center;
+	line-height:25px;
+	border-radius:5px;
+	box-shadow:2px 2px 0 0 #ccc;
+}
+#add a, #outPaper a{
+	display:block;
+}
+
+#searchBar #search{
+	float:right;
+	height:40px;
+	margin-right:50px;
+}
+td{
+	border-bottom:1px solid rgba(204, 204, 204, .5);	
+	font-size:15px;
+	font-family:FangSong;
+	font-weight:bold;
+	color:#333;
+}
+th{
+	height:30px;
+	background-color:rgba(204, 204, 204, .5);
+	border-right:1px solid #ccc;
+	text-align:left;	
+}
+td{
+	width:auto;
+	height:25px;	
+}
+.font{
+	display:block;
+	float:left;
+	margin-left:10px;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+a:hover{
+	color:red;
+}
+#barCon{
+	position:fixed;
+	top:350px;
+}
+#record{
+	position:fixed;
+	top:350px;
+	left:10px;
+}
+#paging{
+	position:fixed;
+	top:350px;
+	left:50%;
+	transform:translate(-50%,0);
+	text-align:center;
+}
+.pagingFont{
+	border-bottom:1px solid rgba(204, 204, 204, .5);	
+	font-size:15px;
+	font-family:FangSong;
+	font-weight:bold;
+	color:#333;
+}
+.pageFont{
+	font-size:15px;
+	font-family:FangSong;
+	font-weight:bold;
+	color:#bbb;
+}
+.recoding{
+	font-size:15px;
+	font-family:FangSong;
+	font-weight:bold;
+	color:#333;
+}

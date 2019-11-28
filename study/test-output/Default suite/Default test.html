@@ -1,0 +1,1129 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>210/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 23 21:30:31 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>339 seconds (339234 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 1, open, , , http://172.16.75.119:8097, , 打开网页, fail</td>
+<td></td>
+<td>7</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 2, switch, , , title:大型企业数字化平台, , 转换窗口：大型企业数字化平台, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 3, wait, xpath, //input[@fieldid="username"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 4, click, xpath, //input[@fieldid="username"], , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 5, input, xpath, //input[@fieldid="username"], am, , 输入内容-am, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 6, wait, xpath, //input[@fieldid="password"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 7, click, xpath, //input[@fieldid="password"], , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 8, input, xpath, //input[@fieldid="password"], 123456a, , 输入内容-123456a, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 9, wait, xpath, //*[@fieldid="login_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 10, click, xpath, //*[@fieldid="login_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 11, wait, xpath, //*[@fieldid="首页_top-area"]//*[contains(@class,"nc-workbench-icon")]//*[contains(@class,"nc-workbench-icon")], , , 等待, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 12, click, xpath, //*[@fieldid="首页_top-area"]//*[contains(@class,"nc-workbench-icon")]//*[contains(@class,"nc-workbench-icon")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 13, wait, xpath, //*[@fieldid="nav-group"]//*[text()="资产基础设置"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 14, click, xpath, //*[@fieldid="nav-group"]//*[text()="资产基础设置"], , , 点击节点-资产基础设置, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 15, wait, xpath, //*[@fieldid="nav-node"]//*[text()="变动原因"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 16, click, xpath, //*[@fieldid="nav-node"]//*[text()="变动原因"], , , 点击节点-变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 17, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 18, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 19, wait, xpath, //*[@fieldid="header-area"]//*[@fieldid="Add_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 20, click, xpath, //*[@fieldid="header-area"]//*[@fieldid="Add_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 21, , , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 22, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 23, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 24, input, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, 02, , 输入内容-02, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 25, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 26, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 27, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 28, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 29, input, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, 自动化测试, , 输入内容-自动化测试, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 30, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 31, click, xpath, //*[@fieldid="变动原因_top-area"]//*[contains(@class,"icon-luzhi1")], , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 32, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 33, wait, xpath, //*[@fieldid="header-area"]//*[@fieldid="Save_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 34, click, xpath, //*[@fieldid="header-area"]//*[@fieldid="Save_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 35, wait, xpath, //*[@fieldid="tips-window"]//*[text()="保存成功"], , , 等待, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 36, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="保存成功"], 保存成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 37, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 38, click, xpath, //*[@id="app"]/div/div[1]/nav/div[2]/div/div[1]/div[3]/div/div/img, , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 39, switch, , , title:SPR-变动原因-保存, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 40, write, , , 变动原因保存, , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 41, close, , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 42, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 43, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 44, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 45, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 46, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="确定"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 47, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="确定"], , , 点击节点-确定, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 48, wait, xpath, //*[@fieldid="tips-window"]//*[text()="停用成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 49, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="停用成功"], 停用成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 50, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 51, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 52, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 53, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 点击节点-Y, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 54, wait, xpath, //*[@fieldid="tips-window"]//*[text()="启用成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 55, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="启用成功"], 启用成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 56, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-fixed-right")]//tr[2]//*[@fieldid="opr"]//*[@fieldid="Delete_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 57, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 58, click, xpath, //*[@fieldid="变动原因_top-area"]//*[contains(@class,"icon-luzhi1")], , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 59, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 60, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 61, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 点击节点-Y, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 62, wait, xpath, //*[@fieldid="tips-window"]//*[text()="删除成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 63, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="删除成功"], 删除成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 64, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 65, click, xpath, //*[@id="app"]/div/div[1]/nav/div[2]/div/div[1]/div[3]/div/div/img, , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 66, switch, , , title:SPR-变动原因-Y, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 67, write, , , 变动原因删除, , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 68, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 69, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 70, quit, , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 71, open, , , http://172.16.75.119:8097, , 打开网页, fail</td>
+<td></td>
+<td>7</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 72, switch, , , title:大型企业数字化平台, , 转换窗口：大型企业数字化平台, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 73, wait, xpath, //input[@fieldid="username"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 74, click, xpath, //input[@fieldid="username"], , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 75, input, xpath, //input[@fieldid="username"], am, , 输入内容-am, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 76, wait, xpath, //input[@fieldid="password"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 77, click, xpath, //input[@fieldid="password"], , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 78, input, xpath, //input[@fieldid="password"], 123456a, , 输入内容-123456a, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 79, wait, xpath, //*[@fieldid="login_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 80, click, xpath, //*[@fieldid="login_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 81, wait, xpath, //*[@fieldid="首页_top-area"]//*[contains(@class,"nc-workbench-icon")]//*[contains(@class,"nc-workbench-icon")], , , 等待, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 82, click, xpath, //*[@fieldid="首页_top-area"]//*[contains(@class,"nc-workbench-icon")]//*[contains(@class,"nc-workbench-icon")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 83, wait, xpath, //*[@fieldid="nav-group"]//*[text()="资产基础设置"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 84, click, xpath, //*[@fieldid="nav-group"]//*[text()="资产基础设置"], , , 点击节点-资产基础设置, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 85, wait, xpath, //*[@fieldid="nav-node"]//*[text()="变动原因"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 86, click, xpath, //*[@fieldid="nav-node"]//*[text()="变动原因"], , , 点击节点-变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 87, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 88, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 89, wait, xpath, //*[@fieldid="header-area"]//*[@fieldid="Add_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 90, click, xpath, //*[@fieldid="header-area"]//*[@fieldid="Add_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 91, , , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 92, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 93, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 94, input, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, 02, , 输入内容-02, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 95, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 96, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 97, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 98, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 99, input, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, 自动化测试, , 输入内容-自动化测试, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 100, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 101, click, xpath, //*[@fieldid="变动原因_top-area"]//*[contains(@class,"icon-luzhi1")], , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 102, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 103, wait, xpath, //*[@fieldid="header-area"]//*[@fieldid="Save_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 104, click, xpath, //*[@fieldid="header-area"]//*[@fieldid="Save_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 105, wait, xpath, //*[@fieldid="tips-window"]//*[text()="保存成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 106, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="保存成功"], 保存成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 107, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 108, click, xpath, //*[@id="app"]/div/div[1]/nav/div[2]/div/div[1]/div[3]/div/div/img, , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 109, switch, , , title:SPR-变动原因-保存, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 110, write, , , 变动原因保存, , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 111, close, , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 112, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 113, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 114, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 115, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 116, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="确定"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 117, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="确定"], , , 点击节点-确定, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 118, wait, xpath, //*[@fieldid="tips-window"]//*[text()="停用成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 119, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="停用成功"], 停用成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 120, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 121, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 122, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 123, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 点击节点-Y, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 124, wait, xpath, //*[@fieldid="tips-window"]//*[text()="启用成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 125, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="启用成功"], 启用成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 126, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-fixed-right")]//tr[2]//*[@fieldid="opr"]//*[@fieldid="Delete_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 127, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 128, click, xpath, //*[@fieldid="变动原因_top-area"]//*[contains(@class,"icon-luzhi1")], , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 129, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 130, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 131, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 点击节点-Y, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 132, wait, xpath, //*[@fieldid="tips-window"]//*[text()="删除成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 133, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="删除成功"], 删除成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 134, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 135, click, xpath, //*[@id="app"]/div/div[1]/nav/div[2]/div/div[1]/div[3]/div/div/img, , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 136, switch, , , title:SPR-变动原因-Y, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 137, write, , , 变动原因删除, , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 138, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 139, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 140, quit, , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 141, open, , , http://172.16.75.119:8097, , 打开网页, fail</td>
+<td></td>
+<td>7</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 142, switch, , , title:大型企业数字化平台, , 转换窗口：大型企业数字化平台, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 143, wait, xpath, //input[@fieldid="username"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 144, click, xpath, //input[@fieldid="username"], , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 145, input, xpath, //input[@fieldid="username"], am, , 输入内容-am, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 146, wait, xpath, //input[@fieldid="password"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 147, click, xpath, //input[@fieldid="password"], , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 148, input, xpath, //input[@fieldid="password"], 123456a, , 输入内容-123456a, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 149, wait, xpath, //*[@fieldid="login_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 150, click, xpath, //*[@fieldid="login_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 151, wait, xpath, //*[@fieldid="首页_top-area"]//*[contains(@class,"nc-workbench-icon")]//*[contains(@class,"nc-workbench-icon")], , , 等待, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 152, click, xpath, //*[@fieldid="首页_top-area"]//*[contains(@class,"nc-workbench-icon")]//*[contains(@class,"nc-workbench-icon")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 153, wait, xpath, //*[@fieldid="nav-group"]//*[text()="资产基础设置"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 154, click, xpath, //*[@fieldid="nav-group"]//*[text()="资产基础设置"], , , 点击节点-资产基础设置, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 155, wait, xpath, //*[@fieldid="nav-node"]//*[text()="变动原因"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 156, click, xpath, //*[@fieldid="nav-node"]//*[text()="变动原因"], , , 点击节点-变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 157, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 158, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 159, wait, xpath, //*[@fieldid="header-area"]//*[@fieldid="Add_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 160, click, xpath, //*[@fieldid="header-area"]//*[@fieldid="Add_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 161, , , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 162, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 163, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 164, input, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_code"]//*[@fieldid="reason_code"]//input, 02, , 输入内容-02, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 165, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 166, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 167, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 168, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, , , 点击输入框, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 169, input, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//tr[2]//*[@fieldid="reason_name"]//*[@fieldid="reason_name"]//input, 自动化测试, , 输入内容-自动化测试, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 170, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 171, click, xpath, //*[@fieldid="变动原因_top-area"]//*[contains(@class,"icon-luzhi1")], , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 172, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 173, wait, xpath, //*[@fieldid="header-area"]//*[@fieldid="Save_btn"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 174, click, xpath, //*[@fieldid="header-area"]//*[@fieldid="Save_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 175, wait, xpath, //*[@fieldid="tips-window"]//*[text()="保存成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 176, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="保存成功"], 保存成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 177, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 178, click, xpath, //*[@id="app"]/div/div[1]/nav/div[2]/div/div[1]/div[3]/div/div/img, , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 179, switch, , , title:SPR-变动原因-保存, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 180, write, , , 变动原因保存, , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 181, close, , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 182, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 183, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 184, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 185, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 186, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="确定"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 187, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="确定"], , , 点击节点-确定, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 188, wait, xpath, //*[@fieldid="tips-window"]//*[text()="停用成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 189, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="停用成功"], 停用成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 190, wait, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 191, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-body")]//table//tr//*[@fieldid="enablestate"]//*[contains(@class,"u-switch")], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 192, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 193, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 点击节点-Y, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 194, wait, xpath, //*[@fieldid="tips-window"]//*[text()="启用成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 195, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="启用成功"], 启用成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 196, click, xpath, //*[@fieldid="list_head_table"]//*[contains(@class,"table-fixed-right")]//tr[2]//*[@fieldid="opr"]//*[@fieldid="Delete_btn"], , , 点击, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 197, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 198, click, xpath, //*[@fieldid="变动原因_top-area"]//*[contains(@class,"icon-luzhi1")], , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 199, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 200, wait, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 201, click, xpath, //*[@fieldid="tips-window"]//*[@fieldid="confirm_btn"]//*[text()="Y"], , , 点击节点-Y, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 202, wait, xpath, //*[@fieldid="tips-window"]//*[text()="删除成功"], , , 等待, fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 203, checkpoint, xpath, //*[@fieldid="tips-window"]//*[text()="删除成功"], 删除成功, , 设置检查点, fail</td>
+<td></td>
+<td>1</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 204, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 205, click, xpath, //*[@id="app"]/div/div[1]/nav/div[2]/div/div[1]/div[3]/div/div/img, , , , fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 206, switch, , , title:SPR-变动原因-Y, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>6</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 207, write, , , 变动原因删除, , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 208, switch, , , title:变动原因, , 转换窗口：变动原因, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 209, switch, xpath, //iframe[@fieldid="main_iframe"], , , 进入框架内, fail</td>
+<td></td>
+<td>2</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+<tr>
+<td title='com.yonyou.service.TestCaseService.run()'><b>run</b><br>Test class: com.yonyou.service.TestCaseService<br>Parameters: 210, quit, , , , , , fail</td>
+<td></td>
+<td>0</td>
+<td>com.yonyou.service.TestCaseService@79924b</td></tr>
+</table><p>
+</body>
+</html>

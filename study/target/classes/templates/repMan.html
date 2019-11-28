@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>列表</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/caseMan.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+  <div id="caseMan">
+    <el-button class="btn" @click="goBack">返回</el-button>
+    <el-table :data="tableData" style="width: 100%">
+      <el-table-column label="序号">
+        <template slot-scope="scope">
+          <div>{{scope.$index + 1}}</div>
+        </template>
+      </el-table-column>
+      <el-table-column prop="fileName" label="用例名称">
+      </el-table-column>
+      <el-table-column prop="size" label="用例大小">
+      </el-table-column>
+      <el-table-column prop="uploadDate" label="用例上传时间">
+      </el-table-column>
+      <el-table-column label="操作">
+        <template slot-scope="scope">
+            <el-button type="danger" @click="deleteData(scope.row.id)" icon="el-icon-delete"></el-button>
+            <el-button type="primary" @click="uploadDate(scope.row.fileDownloadUri)" icon="el-icon-download"></el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
+  <script src="./js/repMan.js"></script>
+</body>
+</html>

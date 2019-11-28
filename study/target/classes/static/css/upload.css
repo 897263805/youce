@@ -1,0 +1,12 @@
+#upload {
+  width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+.upload-demo {
+  margin: 20px;
+  width: 300px;
+}
+.demo-form-inline {
+  padding-left: 20px;
+}
